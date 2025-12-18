@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: load-generator-deployment
+  namespace: default
+  labels:
+    app: load-generator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: load-generator
+  template:
+    metadata:
+      labels:
+        app: load-generator
+    spec:
+      # Use the host's network stack to avoid Calico CNI setup
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
+      containers:
+        - name: load-generator
+          image: localhost:32000/load-generator:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: TARGET
+              value: "http://javabenchmark-service.default.svc.cluster.local:8080/primecheck"
+            - name: FREQUENCY
+              value: "5"
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+

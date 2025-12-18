@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: javabenchmark-deployment
+  labels:
+    app: javabenchmarkapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javabenchmarkapp
+  template:
+    metadata:
+      labels:
+        app: javabenchmarkapp
+    spec:
+      containers:
+        - name: javabenchmark-container
+          image: nclcloudcomputing/javabenchmarkapp
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+
