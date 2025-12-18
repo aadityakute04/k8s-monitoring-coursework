@@ -1,3 +1,44 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MicroK8s-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Node_Exporter-1F425F?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/kube--state--metrics-6E40C9?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Load_Generator-000000?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/YAML-FFDD00?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+</p>
+
+---
+
+<h1 align="center">☁️ Cloud Computing Project</h1>
+<h2 align="center">Kubernetes Benchmarking & Monitoring</h2>
+
+<p align="center">
+🚀 Kubernetes Dashboard & Java Benchmark Application <br>
+📊 Monitoring with Prometheus & Grafana <br>
+🔥 Load Generation & Performance Analysis
+</p>
+
+---
+
+## 🧩 Project Tasks Overview
+
+| Task | Description |
+|-----:|------------|
+| 🟦 Task 1 | Kubernetes Dashboard & Java Benchmark Application |
+| 🟩 Task 2 | Kubernetes Monitoring Stack (Prometheus, Grafana, Node Exporter) |
+| 🟨 Task 3 | Load Generator (Python + Docker) |
+| 🟥 Task 4 | Performance Monitoring & Benchmark Analysis |
+
+---
+
+
 # 🚀 Kubernetes Monitoring & Load Benchmarking Coursework
 
 ## 📘 Overview
